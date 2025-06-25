@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react'
 
-import { SearchResponseItem } from 'requests/search';
+import { SearchResponseItem } from 'requests/search'
 
 type SearchResultsProps = {
     results: Array<SearchResponseItem>

@@ -5,7 +5,7 @@ import Game from 'components/game'
 import Search from 'components/search'
 import AstronomyPicture from 'components/astronomy_picture'
 
-import './style.css';
+import './style.css'
 
 import Header from './header'
 import IndexContent from './content'
