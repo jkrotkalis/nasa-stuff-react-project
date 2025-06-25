@@ -5,10 +5,8 @@ import Game from 'components/game'
 import Search from 'components/search'
 import AstronomyPicture from 'components/astronomy_picture'
 
-import './style.css'
-
-import Header from './header'
-import IndexContent from './content'
+import Header from 'components/header'
+import IndexContent from 'components/index'
 
 export default function App () {
     // the welcome component has the header/navbar and the button to choose to search is toggled

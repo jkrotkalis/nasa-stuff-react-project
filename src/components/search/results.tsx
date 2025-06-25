@@ -39,24 +39,18 @@ export default function SearchResults (props: SearchResultsProps) {
     const showResults = (results: Array<SearchResponseItem>) => {
         if (results.length > 0) {
             return results.map(result =>
-                <div className="cardborder">
-                <div className="leftbox">
-                    <div className="image"><img src={hasImage(result)} alt="" /></div>
-                </div>
-                <div className="rightbox">
-                    <div className="title">{hasContent(result)}</div>
-                </div>
-                <div className="clearfix">
-                    <div className="bottombox">
-                    <div className="desc">
-                        {sameContent(result.data[0].title, result.data[0].description)}
+                <>
+                    <img src={hasImage(result)} alt="" />
+                    <div>
+                        <h2>{hasContent(result)}</h2>
+                        <div>
+                            {sameContent(result.data[0].title, result.data[0].description)}
+                        </div>
                     </div>
+                    <div className="search__result-source">
+                        From: {result.data[0].secondary_creator || 'NASA'}
                     </div>
-                </div>
-                <div className="creator">
-                    {result.data[0].secondary_creator}
-                </div>
-                </div>)
+                </>)
         } else {
             return noResults()
         }
@@ -64,12 +58,12 @@ export default function SearchResults (props: SearchResultsProps) {
 
     // A function to help show a message when the search term returns no results
     const noResults = () => {
-         return <div className="noresult">no results yet</div>
+         return <h2>No results yet</h2>
     }
 
     // The Search field is rendered and the results are presented.
     return (
-        <div className="searchstuff">
+        <div className="search__results">
             {showResults(props.results)}
         </div>
     )

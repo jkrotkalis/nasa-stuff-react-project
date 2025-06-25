@@ -5,6 +5,8 @@ import { searchImages, SearchResponseItem } from 'requests/search'
 import Form from './form'
 import Results from './results'
 
+import './style.css'
+
 export default function Search () {
     const [images, setImages] = useState(Array<SearchResponseItem>)
 
@@ -15,9 +17,9 @@ export default function Search () {
     }
 
     return (
-    <>  
+    <div>  
         <Form fetchImages={fetchImages} />
         <Results results={images} />
-    </> 
+    </div> 
     )
 }

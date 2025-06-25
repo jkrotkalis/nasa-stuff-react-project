@@ -22,11 +22,11 @@ export default function SearchForm (props: SearchFormProps) {
 
   // Renders a form to search
   return (
-    <div className="searchcontent">
-      <h3 className="searchtext">Enter a Celestial Term:</h3>
+    <div className="search__form">
+      <h3>Enter a Celestial Term:</h3>
       <form onSubmit={handleSubmit}>
         <input type="text" value={query} onChange={handleChangeQuery} />
-        <Link to="/search" onClick={handleSubmit}><button id="searchformbutton">Submit</button></Link>
+        <Link to="/search" onClick={handleSubmit}><button>Submit</button></Link>
       </form>
     </div>
   )

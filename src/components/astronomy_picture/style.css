@@ -1,0 +1,18 @@
+.astronomy-picture {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 5%;
+    padding-bottom: 5%;
+
+    text-align: center;
+}
+
+.astronomy-picture .button-group {
+    flex-direction: row;
+}
+
+.astronomy-picture img {
+    height: 70vh;
+    object-fit: contain;
+}
