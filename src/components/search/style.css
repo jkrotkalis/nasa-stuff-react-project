@@ -33,12 +33,13 @@
 .search__results img {
     max-width: 100%;
     max-height: 500px;
+
+    align-self: center;
 }
 
 .search__result-source {
     grid-column: span 2;
-    align-self: center;
-    
+  
     padding-bottom: 5px;
     margin-bottom: 20px;
     margin-top: 10px;
