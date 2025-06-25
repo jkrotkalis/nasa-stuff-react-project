@@ -1,4 +1,6 @@
-## Notes as I make this project real
+## Description
+
+Simple react project featuring public NASA APIs and homely styling.
 
 Now refactored to modern functional react/typescript and with a new feature (Astronomy Photo of the Day)!
 
